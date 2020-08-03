@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.css" rel="stylesheet">
+
+    <link href="css/cover.css" rel="stylesheet">
+    <link href="css/message.css" rel="stylesheet">
+
+    <title>MEBO</title>
+
+  </head>
+
+  <body ng-app="mebo">
+
+    <div class="wrapper">
+      <navigation></navigation>
+      <div class="container">
+        <div class="content-area">
+          <div class="mebo-content "ui-view></div>
+        </div>
+      </div>
+      <footer-bar></footer-bar>
+    </div>
+
+    <error-modal></error-modal>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"></script>
+    <script src="//unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.17.2/lodash.min.js"></script>
+
+    <script src="mebo.module.js"></script>
+    <script src="routing.config.js"></script>
+
+    <script src="components/components.module.js"></script>
+
+    <script src="components/navigation/navigation.component.js"></script>
+
+    <script src="components/footer/footer.component.js"></script>
+    <script src="components/filterbar/filter-bar.component.js"></script>
+
+    <script src="components/boardcreator/board-creator.component.js"></script>
+    <script src="components/boardcreator/board-creator.controller.js"></script>
+
+    <script src="components/board/board.component.js"></script>
+    <script src="components/board/board.controller.js"></script>
+
+    <script src="components/message/message.component.js"></script>
+    <script src="components/message/message.controller.js"></script>
+
+    <script src="components/messagecreator/message-creator.component.js"></script>
+    <script src="components/messagecreator/message-creator.controller.js"></script>
+
+    <script src="service/service.module.js"></script>
+    <script src="service/message.service.js"></script>
+    <script src="service/board.service.js"></script>
+
+    <script src="error/error.module.js"></script>
+    <script src="error/http.error.interceptor.js"></script>
+    <script src="error/modal/error-modal.component.js"></script>
+
+  </body>
+</html>
